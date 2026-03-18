@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Mariyam Ashraf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="projects.css">
+</head>
+<body>
+<canvas id="bg-grid"></canvas>
+<div id="cur"></div>
+<div id="cur-r"></div>
+<div class="grain"></div>
+<a href="index.html" class="back-btn">← Back</a>
+
+<div class="shell">
+
+  <!-- ══ LEFT PANEL ══ -->
+  <nav class="left-panel">
+    <div class="lp-head">
+      <div class="lp-eyebrow">Selected Work</div>
+      <div class="lp-title">Work</div>
+      <div class="lp-title-sub">Showcase</div>
+    </div>
+
+    <div class="lp-filters">
+      <button class="lp-filter active" data-cat="All">All</button>
+      <button class="lp-filter" data-cat="Website">Web</button>
+      <button class="lp-filter" data-cat="Python">Python</button>
+    </div>
+
+    <div class="lp-list" id="lpList"></div>
+    <div class="lp-fade"></div>
+
+    <div class="lp-stats">
+      <div class="lp-stat">
+        <div class="lp-stat-val" id="statProjects">17</div>
+        <div class="lp-stat-lbl">Projects</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat-val">2</div>
+        <div class="lp-stat-lbl">Categories</div>
+      </div>
+      <div class="lp-stat">
+        <div class="lp-stat-val">3</div>
+        <div class="lp-stat-lbl">Years</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ RIGHT STAGE ══ -->
+  <main class="stage" id="stage">
+
+    <div class="stage-glow"><div class="stage-glow-inner" id="stageGlow"></div></div>
+    <div class="stage-scanlines"></div>
+
+    <!-- Top bar -->
+    <header class="stage-bar">
+      <div class="sb-left">
+        <span class="sb-cat" id="sbCat"></span>
+        <span class="sb-year" id="sbYear"></span>
+      </div>
+      <div class="sb-right">
+        <span class="sb-counter"><b id="sbCur">01</b> / <span id="sbTot">16</span></span>
+        <button class="sb-nav-btn" id="btnUp">↑</button>
+        <button class="sb-nav-btn" id="btnDown">↓</button>
+      </div>
+    </header>
+
+    <!-- Body -->
+    <div class="stage-body">
+
+      <!-- Info column -->
+      <div class="stage-info">
+        <div class="si-ghost" id="siGhost"></div>
+        <p class="si-num"    id="siNum"></p>
+        <div class="si-title"><span class="si-title-clip" id="siTitle"></span></div>
+        <p class="si-sub"    id="siSub"></p>
+        <div class="si-divider" id="siDivider"></div>
+        <ul class="si-bullets" id="siBullets"></ul>
+        <div class="si-tag-row" id="siTags"></div>
+        <div class="si-actions" id="siActions"></div>
+      </div>
+
+      <!-- Preview column -->
+      <div class="stage-preview">
+        <div class="sp-browser" id="spBrowser">
+          <div class="sp-bar">
+            <div class="sp-dots"><span></span><span></span><span></span></div>
+            <div class="sp-url" id="spUrl"></div>
+            <a class="sp-link" id="spLink" target="_blank" rel="noopener">↗</a>
+          </div>
+          <div class="sp-screen" id="spScreen"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Progress bar -->
+    <div class="stage-progress"><div class="stage-progress-fill" id="stageFill"></div></div>
+
+  </main>
+
+</div>
+
+<script src="projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect — Mariyam Ashraf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="connect.css">
+</head>
+<body>
+
+<canvas id="bg-grid"></canvas>
+<div id="cur"></div>
+<div id="cur-r"></div>
+<div class="grain"></div>
+
+<a href="index.html" class="back-btn">← Back</a>
+
+<div class="page">
+<main class="connect-wrap">
+
+  <!-- ════ LEFT ════ -->
+  <aside class="c-left">
+
+    <div class="c-left-content">
+
+      <p class="c-eyebrow">Get In Touch</p>
+
+      <h1 class="c-heading">
+        Let's build<br>
+        something<br>
+        <em>together.</em>
+      </h1>
+
+      <p class="c-body">
+        Open to internships, freelance projects,<br>
+        and creative collaborations.<br>
+        Based in Dubai — working globally.
+      </p>
+
+      <div class="c-avail">
+        <span class="c-dot"></span>
+        <span class="c-avail-text">Available for new projects</span>
+      </div>
+
+      <div class="c-links">
+
+        <a href="mailto:ashrafmaryam991@gmail.com" class="c-link c-link--email">
+          <div class="c-link-tag">Email</div>
+          <div class="c-link-info">
+            <span class="c-link-title">Drop me a line</span>
+            <span class="c-link-val">ashrafmaryam991@gmail.com</span>
+          </div>
+          <span class="c-link-arrow">↗</span>
+        </a>
+
+        <a href="https://linkedin.com/in/" target="_blank" class="c-link c-link--linkedin">
+          <div class="c-link-tag">LinkedIn</div>
+          <div class="c-link-info">
+            <span class="c-link-title">Let's connect</span>
+            <span class="c-link-val">Mariyam Ashraf</span>
+          </div>
+          <span class="c-link-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/" target="_blank" class="c-link c-link--github">
+          <div class="c-link-tag">GitHub</div>
+          <div class="c-link-info">
+            <span class="c-link-title">See the code</span>
+            <span class="c-link-val">github.com/mariyam</span>
+          </div>
+          <span class="c-link-arrow">↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="c-left-foot">
+      <span class="c-foot-item">UAE — Dubai</span>
+      <span class="c-foot-sep"></span>
+      <span class="c-foot-item" id="clock"></span>
+    </div>
+
+  </aside>
+
+  <!-- ════ RIGHT ════ -->
+  <section class="c-right">
+
+    <div class="c-form-wrap" id="formWrap">
+
+      <div class="c-form-top">
+        <h2 class="c-form-heading">Send a message</h2>
+        <p class="c-form-sub">Fill in the details below and I'll get back to you.</p>
+      </div>
+
+      <form id="cForm" novalidate>
+
+        <div class="c-row c-row--2">
+          <div class="c-field" id="cf-name">
+            <label class="c-label" for="f-name">Your Name</label>
+            <input id="f-name" type="text" class="c-input" placeholder="Full name" autocomplete="off" required>
+            <span class="c-bar"></span>
+            <span class="c-err">Please enter your name</span>
+          </div>
+          <div class="c-field" id="cf-email">
+            <label class="c-label" for="f-email">Email Address</label>
+            <input id="f-email" type="email" class="c-input" placeholder="you@example.com" autocomplete="off" required>
+            <span class="c-bar"></span>
+            <span class="c-err">Enter a valid email</span>
+          </div>
+        </div>
+
+        <div class="c-field" id="cf-subject">
+          <label class="c-label" for="f-subject">Subject</label>
+          <input id="f-subject" type="text" class="c-input" placeholder="What's this about?" autocomplete="off">
+          <span class="c-bar"></span>
+        </div>
+
+        <div class="c-field c-field--tall" id="cf-msg">
+          <label class="c-label" for="f-msg">Message</label>
+          <textarea id="f-msg" class="c-input c-textarea" placeholder="Tell me about your project, idea, or just say hello…" required></textarea>
+          <span class="c-bar"></span>
+          <span class="c-err">Please write a message</span>
+        </div>
+
+        <div class="c-actions">
+          <button type="submit" class="c-btn" id="cSubmit">
+            <span class="c-btn-text">Send Message</span>
+            <span class="c-btn-icon">→</span>
+            <span class="c-btn-loader"></span>
+          </button>
+          <p class="c-note">I typically reply within 24–48 hours.</p>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- success -->
+    <div class="c-success" id="cSuccess">
+      <div class="c-success-icon">✓</div>
+      <h3 class="c-success-h">Message sent.</h3>
+      <p class="c-success-p">Thanks for reaching out — I'll be in touch soon.</p>
+      <button class="c-success-reset" id="cAgain">Send another →</button>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="c-footer">
+  <span>© 2026 — Mariyam Ashraf — UAE / Global</span>
+  <nav>
+    <a href="projects.html">Projects</a>
+    <a href="collection.html">Collection</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</footer>
+
+</div>
+<script src="connect.js"></script>
+</body>
+</html>

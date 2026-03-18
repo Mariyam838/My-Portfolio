@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariyam Ashraf — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<canvas id="bg-grid"></canvas>
+<div id="cur"></div>
+<div id="cur-r"></div>
+
+<nav>
+  <div class="nav-loc">
+    <span class="nav-loc-label">Based in</span>
+    <span class="nav-loc-city">UAE &mdash; Dubai</span>
+    <span class="nav-loc-time" id="clock"></span>
+  </div>
+  <div class="nav-expertise">
+    <span class="nav-col-label">(My Expertise)</span>
+    <span>UI / UX Design</span>
+    <span>Frontend Dev</span>
+    <span>Motion Design</span>
+  </div>
+  <ul class="nav-links">
+    <li><span class="nav-col-label">Navigate</span></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="collection.html">Collection</a></li>
+    <li><a href="connect.html">Connect</a></li>
+  </ul>
+  <div class="nav-bio">
+    <span class="nav-col-label">About</span>
+    <p>Creative Computing student at BathSpa University. Building web experiences, Python tools, and generative art.</p>
+  </div>
+  <div class="nav-right">
+    <a href="profile.html" class="nav-cta">The Profile &rarr;</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="section-hero">
+
+    <!-- Canvas tiles — unchanged from original -->
+    <div class="tile h-t1"><div class="tile-bg"><canvas id="c1"></canvas></div><div class="sweep"></div><span class="idx">01</span></div>
+    <div class="tile h-t2"><div class="tile-bg"><canvas id="c2"></canvas></div><div class="sweep"></div><span class="idx">02</span></div>
+    <div class="tile h-t3"><div class="tile-bg"><canvas id="c3"></canvas></div><div class="sweep"></div><span class="idx">03</span></div>
+    <div class="tile h-t4"><div class="tile-bg"><canvas id="c4"></canvas></div><div class="sweep"></div><span class="idx">04</span></div>
+    <div class="tile h-t5"><div class="tile-bg"><canvas id="c5"></canvas></div><div class="sweep"></div><span class="idx">05</span></div>
+    <div class="tile h-t6"><div class="tile-bg"><canvas id="c6"></canvas></div><div class="sweep"></div><span class="idx">06</span></div>
+
+    <!-- Overlay: identity + CTA -->
+    <div class="hero-overlay">
+      <p class="hero-kicker">— Mariyam Ashraf &nbsp;/&nbsp; Creative Computing &nbsp;/&nbsp; UAE</p>
+      <h1 class="hero-heading">Craft that<br><em>moves</em><br>people.</h1>
+      <p class="hero-sub">Digital experiences defined by strong visual direction, refined motion, and a distinct signature. Every detail is intentional. Every interaction is earned.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="hero-cta">View Projects &rarr;</a>
+        <a href="profile.html" class="hero-link">The Profile &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Bottom-right: name badge -->
+    <div class="hero-meta">
+      <p class="hero-meta-name">Mariyam Ashraf</p>
+      <p class="hero-meta-role">UI / UX &nbsp;&mdash;&nbsp; Frontend &nbsp;&mdash;&nbsp; Motion</p>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span class="hero-scroll-label">Scroll</span>
+      <span class="hero-scroll-line"></span>
+    </div>
+
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="section-statement">
+    <div class="statement-left">
+      <p class="statement-eyebrow">— Design Philosophy</p>
+      <h2 class="statement-heading">Interfaces<br>built with<br><em>intent.</em></h2>
+      <p class="statement-body">Digital experiences defined by strong visual direction, refined motion, and a distinct signature. Every detail is intentional. Every interaction is earned.</p>
+    </div>
+    <div class="statement-right">
+      <div class="statement-disciplines">
+        <div class="discipline-row"><span class="discipline-name">UI / UX Design</span><span class="discipline-num">01</span></div>
+        <div class="discipline-row"><span class="discipline-name">Frontend Development</span><span class="discipline-num">02</span></div>
+        <div class="discipline-row"><span class="discipline-name">Motion &amp; Interaction</span><span class="discipline-num">03</span></div>
+        <div class="discipline-row"><span class="discipline-name">Visual Direction</span><span class="discipline-num">04</span></div>
+      </div>
+      <p class="statement-footer">Available for select projects<br>UAE &mdash; Working globally</p>
+    </div>
+  </section>
+
+  <!-- GRID 2 -->
+  <section class="section-grid2">
+    <div class="tile"><div class="tile-bg"><canvas id="c7"></canvas></div><div class="sweep"></div><span class="idx">07</span></div>
+    <div class="tile"><div class="tile-bg"><canvas id="c8"></canvas></div><div class="sweep"></div><span class="idx">08</span></div>
+    <div class="tile"><div class="tile-bg"><canvas id="c9"></canvas></div><div class="sweep"></div><span class="idx">09</span></div>
+    <div class="tile"><div class="tile-bg"><canvas id="c10"></canvas></div><div class="sweep"></div><span class="idx">10</span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="section-marquee">
+    <div class="marquee-track" id="marquee">
+      <span class="marquee-item">Projects<span></span></span>
+      <span class="marquee-item">Collection<span></span></span>
+      <span class="marquee-item">Story<span></span></span>
+      <span class="marquee-item">Connect<span></span></span>
+      <span class="marquee-item">Motion<span></span></span>
+      <span class="marquee-item">Visual Direction<span></span></span>
+      <span class="marquee-item">Projects<span></span></span>
+      <span class="marquee-item">Collection<span></span></span>
+      <span class="marquee-item">Story<span></span></span>
+      <span class="marquee-item">Connect<span></span></span>
+      <span class="marquee-item">Motion<span></span></span>
+      <span class="marquee-item">Visual Direction<span></span></span>
+    </div>
+  </section>
+
+  <!-- GRID 3 -->
+  <section class="section-grid3">
+    <div class="tile"><div class="tile-bg"><canvas id="c11"></canvas></div><div class="sweep"></div><span class="idx">11</span></div>
+    <div class="tile"><div class="tile-bg"><canvas id="c12"></canvas></div><div class="sweep"></div><span class="idx">12</span></div>
+    <div class="tile"><div class="tile-bg"><canvas id="c13"></canvas></div><div class="sweep"></div><span class="idx">13</span></div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="section-footer">
+    <p class="footer-kicker">— Let's build something</p>
+    <h2 class="footer-heading">Ready to create something unforgettable?</h2>
+    <p class="footer-sub">Selected projects only. Reach out to discuss your vision and see if we're the right fit.</p>
+    <a href="mailto:ashrafmaryam991@gmail.com" class="footer-btn">Get In Touch</a>
+    <p class="footer-meta">&copy; 2026 &mdash; Mariyam Ashraf &mdash; UAE / Global</p>
+  </section>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

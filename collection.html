@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collection — Mariyam Ashraf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="collection.css">
+</head>
+<body>
+
+<div id="dot"></div>
+<div id="ring"></div>
+
+<div class="shell">
+
+  <!-- ════ TOP BAR ════ -->
+  <header class="bar">
+    <div class="bar-l">
+      <a href="index.html" class="bar-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Back
+      </a>
+      <div class="bar-sep"></div>
+    </div>
+    <div class="bar-r">
+      <div class="bar-filters" id="barF">
+        <button class="bf on" data-c="all">All</button>
+        <button class="bf" data-c="edit">Edits</button>
+        <button class="bf" data-c="poster">Posters</button>
+        <button class="bf" data-c="cover">Covers</button>
+        <button class="bf" data-c="generative">Generative</button>
+      </div>
+      <div class="bar-count"><b id="bCN">01</b> <span>/ <span id="bCT">14</span></span></div>
+    </div>
+  </header>
+
+  <!-- ════ STAGE ════ -->
+  <main class="stage" id="stage">
+    <div class="blob" id="blob1"></div>
+    <div class="blob" id="blob2"></div>
+    <div id="slides"></div>
+    <div class="s-nav">
+      <button class="s-btn" id="bP">↑</button>
+      <button class="s-btn" id="bN">↓</button>
+    </div>
+    <div class="spg"><div class="spg-f" id="spgF"></div></div>
+  </main>
+
+  <!-- ════ RIGHT PANEL ════ -->
+  <aside class="panel">
+    <div class="pn">
+      <div class="pn-img" id="pnImg">
+        <canvas id="pnC" width="290" height="387"></canvas>
+        <div class="pn-overlay">
+          <p class="pn-ey">Next Up</p>
+          <p class="pn-title" id="pnT">—</p>
+          <p class="pn-cat" id="pnCat">—</p>
+        </div>
+      </div>
+      <div class="pn-bar"><div class="pn-bar-f" id="pnBF"></div></div>
+    </div>
+    <div class="pf">
+      <p class="pf-lbl">Filter</p>
+      <div class="pf-row" id="pfRow">
+        <button class="pc on" data-c="all">All</button>
+        <button class="pc" data-c="edit">Edits</button>
+        <button class="pc" data-c="poster">Poster</button>
+        <button class="pc" data-c="cover">Cover</button>
+        <button class="pc" data-c="generative">Generative</button>
+      </div>
+    </div>
+    <div class="pl-head" id="plH">14 pieces</div>
+    <div class="pl" id="pl"></div>
+  </aside>
+
+</div>
+
+<!-- p5.js loaded before collection.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+<script src="collection.js"></script>
+</body>
+</html>
